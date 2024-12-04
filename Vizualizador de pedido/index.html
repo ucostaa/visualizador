@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Acompanhamento de Pedidos Vasos</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Codigo</th>
+            <th>Pedido</th>
+            <th>Estrutura</th>
+            <th>Desenvolvimento</th>
+            <th>Status</th>
+            <th>Data de Entrega</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-cliente">Cliente</label>
+          <input id="m-cliente" type="text" required />
+  
+          <label for="m-codigo">Código</label>
+          <input id="m-codigo" type="text" required />
+  
+          <label for="m-pedido">Pedido</label>
+          <input id="m-pedido" type="number" required />
+
+          <label for="m-estrutura">Estrutura</label>
+          <input id="m-estrutura" type="text" required />
+
+          <label for="m-desenvolvimento">Desenvolvimento</label>
+          <input id="m-desenvolvimento" type="text" required />
+
+          <label for="m-status">Status</label>
+          <input id="m-status" type="text" required />
+
+          <label for="m-entrega">Data de Entrega</label>
+          <input id="m-entrega" type="date" required />
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
